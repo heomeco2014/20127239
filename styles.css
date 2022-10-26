@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", monospace;
+}
+
+body {
+  color: white;
+  background-color: #000033;
+}
+
+.wrapper {
+  display: block;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+.header__text {
+  font-size: 4.5rem;
+  font-weight: 600;
+  color: rgb(218, 35, 104);
+  font-weight: bold;
+}
+.header__dashed {
+  border-bottom: 8px solid rgb(218, 35, 104);
+  width: 50%;
+  margin: 0 1rem;
+  margin-top: 0.6rem;
+}
+.header__logo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  filter: drop-shadow(0 0 0.75rem rgb(218, 35, 104));
+}
+
+.content .images-list,
+.content .member-detail {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+.content .images-list .member,
+.content .member-detail .member {
+  width: 30%;
+  margin-bottom: 2rem;
+}
+.content .images-list .member img,
+.content .member-detail .member img {
+  max-width: 100%;
+  width: 300px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+.content .images-list .member__name,
+.content .member-detail .member__name {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.content .images-list .member__id,
+.content .member-detail .member__id {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.member-detail {
+  display: flex;
+  justify-content: center;
+}
+.member-detail .member__info {
+  margin-right: auto;
+}
+.member-detail .member__info > * {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.red {
+  color: rgb(218, 35, 104);
+}
+
+.white {
+  color: white;
+}
+
+.logo {
+  position: relative;
+  display: block;
+}
+.logo:hover::before {
+  content: "Back to home";
+  position: absolute;
+  right: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  background-color: transparent;
+  color: red;
+  z-index: 10;
+  transform: translate(0%, 70%);
+}
+
+.logo:hover .logo::before {
+  transition: all 0.3s ease-in-out;
+}

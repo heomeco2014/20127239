@@ -4,14 +4,49 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/node_modules/normalize.css/normalize.css" />
+		<link rel="stylesheet" href="/styles.css" />
 		<title>Thành viên Nhật Minh 2</title>
 	</head>
 	<body>
-    <img src="/images/daihoi.jpg" alt="">
-		<p>MSSV: 20127239_2</p>
-		<p>DOB: 14/12/2001_2</p>
-		<p>Email: nhatminhc14@gmail.com_2</p>
-		<p>Phone number: 093 555 1412_2</p>
-		<a href="/deafault.html">Back to home</a>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__text">Member</div>
+				<span class="header__dashed"></span>
+				<div class="header__logo">
+					<a href="/deafault.html"><img src="/images/khtn.png" alt="logo" /></a>
+				</div>
+			</header>
+
+			<main class="content">
+				<div class="member-detail">
+					<div class="member">
+						<a href="#" class="member__link">
+							<img
+								src="/images/minhvslequangliem.jpg"
+								alt=""
+								class="member__image" />
+						</a>
+					</div>
+					<div class="member__info">
+						<div class="member__name">
+							Hoàng <span class="red">Nhật Minh</span>
+						</div>
+						<div class="member__mssv">
+							<span class="red">MSSV:</span> 20127239
+						</div>
+						<div class="member__dob">
+							<span class="red">DOB:</span> 14/12/2001
+						</div>
+						<div class="member__email">
+							<span class="red">Email:</span> nhatminhc14@gmail.com
+						</div>
+						<div class="member__phone-number">
+							<span class="red">Phone:</span> 093 555 1412
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
 	</body>
 </html>
